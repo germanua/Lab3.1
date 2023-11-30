@@ -1,0 +1,15 @@
+/Users/mac/RiderProjects/ConsoleApp1/IO/obj/Debug/net7.0/IO.csproj.AssemblyReference.cache
+/Users/mac/RiderProjects/ConsoleApp1/IO/obj/Debug/net7.0/IO.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mac/RiderProjects/ConsoleApp1/IO/obj/Debug/net7.0/IO.AssemblyInfoInputs.cache
+/Users/mac/RiderProjects/ConsoleApp1/IO/obj/Debug/net7.0/IO.AssemblyInfo.cs
+/Users/mac/RiderProjects/ConsoleApp1/IO/obj/Debug/net7.0/IO.csproj.CoreCompileInputs.cache
+/Users/mac/RiderProjects/ConsoleApp1/IO/bin/Debug/net7.0/IO.deps.json
+/Users/mac/RiderProjects/ConsoleApp1/IO/bin/Debug/net7.0/IO.dll
+/Users/mac/RiderProjects/ConsoleApp1/IO/bin/Debug/net7.0/IO.pdb
+/Users/mac/RiderProjects/ConsoleApp1/IO/bin/Debug/net7.0/Students.dll
+/Users/mac/RiderProjects/ConsoleApp1/IO/bin/Debug/net7.0/Students.pdb
+/Users/mac/RiderProjects/ConsoleApp1/IO/obj/Debug/net7.0/IO.csproj.CopyComplete
+/Users/mac/RiderProjects/ConsoleApp1/IO/obj/Debug/net7.0/IO.dll
+/Users/mac/RiderProjects/ConsoleApp1/IO/obj/Debug/net7.0/refint/IO.dll
+/Users/mac/RiderProjects/ConsoleApp1/IO/obj/Debug/net7.0/IO.pdb
+/Users/mac/RiderProjects/ConsoleApp1/IO/obj/Debug/net7.0/ref/IO.dll

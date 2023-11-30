@@ -1,0 +1,122 @@
+[
+  {
+    "FirstName": "Anton",
+    "LastName": "Avramenko",
+    "Course": 2,
+    "StudentCard": "12345",
+    "DateOfBirth": "2000-12-20T00:00:00",
+    "Skills": [
+      "None"
+    ]
+  },
+  {
+    "FirstName": "Oleg",
+    "LastName": "Bondar",
+    "Course": 1,
+    "StudentCard": "123456",
+    "DateOfBirth": "2001-01-10T00:00:00",
+    "Skills": [
+      "Singer"
+    ]
+  },
+  {
+    "FirstName": "Artem",
+    "LastName": "Boychenko",
+    "Course": 1,
+    "StudentCard": "12346",
+    "DateOfBirth": "2001-01-10T00:00:00",
+    "Skills": [
+      "None"
+    ]
+  },
+  {
+    "FirstName": "Anton",
+    "LastName": "Bondarenko",
+    "Course": 5,
+    "StudentCard": "101010",
+    "DateOfBirth": "2001-01-10T00:00:00",
+    "Skills": [
+      "None"
+    ]
+  },
+  {
+    "FirstName": "Joy",
+    "LastName": "Kinder",
+    "Course": 3,
+    "StudentCard": "10102",
+    "DateOfBirth": "2001-10-10T00:00:00",
+    "Skills": [
+      "None"
+    ]
+  },
+  {
+    "FirstName": "Oleg",
+    "LastName": "Mongol",
+    "Course": 2,
+    "StudentCard": "10102",
+    "DateOfBirth": "2002-10-10T00:00:00",
+    "Skills": [
+      "None"
+    ]
+  },
+  {
+    "FirstName": "Idi",
+    "LastName": "China",
+    "Course": 2,
+    "StudentCard": "353535",
+    "DateOfBirth": "2001-10-10T00:00:00",
+    "Skills": [
+      "None"
+    ]
+  },
+  {
+    "FirstName": "Oleg",
+    "LastName": "Nor",
+    "Course": 2,
+    "StudentCard": "01021",
+    "DateOfBirth": "2001-10-10T00:00:00",
+    "Skills": [
+      "None"
+    ]
+  },
+  {
+    "FirstName": "Sik",
+    "LastName": "Kui",
+    "Course": 2,
+    "StudentCard": "12145",
+    "DateOfBirth": "2004-10-10T00:00:00",
+    "Skills": [
+      "Alco"
+    ]
+  },
+  {
+    "FirstName": "Iu",
+    "LastName": "Ui",
+    "Course": 1,
+    "StudentCard": "13156",
+    "DateOfBirth": "2005-10-10T00:00:00",
+    "Skills": [
+      "Sex"
+    ]
+  },
+  {
+    "FirstName": "Ole",
+    "LastName": "ol",
+    "Course": 4,
+    "StudentCard": "23647",
+    "DateOfBirth": "2015-12-10T00:00:00",
+    "Skills": [
+      "Noob"
+    ]
+  },
+  {
+    "FirstName": "Anton",
+    "LastName": "Avramenko",
+    "Course": 3,
+    "StudentCard": "13456",
+    "DateOfBirth": "2000-02-12T00:00:00",
+    "Skills": [
+      "None"
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+/Users/mac/RiderProjects/ConsoleApp1/Students/obj/Debug/net7.0/Students.csproj.AssemblyReference.cache
+/Users/mac/RiderProjects/ConsoleApp1/Students/obj/Debug/net7.0/Students.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mac/RiderProjects/ConsoleApp1/Students/obj/Debug/net7.0/Students.AssemblyInfoInputs.cache
+/Users/mac/RiderProjects/ConsoleApp1/Students/obj/Debug/net7.0/Students.AssemblyInfo.cs
+/Users/mac/RiderProjects/ConsoleApp1/Students/obj/Debug/net7.0/Students.csproj.CoreCompileInputs.cache
+/Users/mac/RiderProjects/ConsoleApp1/Students/bin/Debug/net7.0/Students.deps.json
+/Users/mac/RiderProjects/ConsoleApp1/Students/bin/Debug/net7.0/Students.dll
+/Users/mac/RiderProjects/ConsoleApp1/Students/bin/Debug/net7.0/Students.pdb
+/Users/mac/RiderProjects/ConsoleApp1/Students/obj/Debug/net7.0/Students.dll
+/Users/mac/RiderProjects/ConsoleApp1/Students/obj/Debug/net7.0/refint/Students.dll
+/Users/mac/RiderProjects/ConsoleApp1/Students/obj/Debug/net7.0/Students.pdb
+/Users/mac/RiderProjects/ConsoleApp1/Students/obj/Debug/net7.0/ref/Students.dll

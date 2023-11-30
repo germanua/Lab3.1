@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZEkUlPfKE4a3p9XzoSnfrj1EaR/awwLqLjnslMw/MOt/Bovt5G88n3rC1x7jaqOzw/zO+uXthDERPG23Px2DCQ==",
+  "success": true,
+  "projectFilePath": "/Users/mac/RiderProjects/ConsoleApp1/IO/IO.csproj",
+  "expectedPackageFiles": [
+    "/Users/mac/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

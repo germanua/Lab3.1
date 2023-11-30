@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\IO\IO.csproj" />
+      <ProjectReference Include="..\RW\RW.csproj" />
+      <ProjectReference Include="..\Students\Students.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" />
+    </ItemGroup>
+
+</Project>
