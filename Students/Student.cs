@@ -20,6 +20,16 @@ public class Student
         Skills = skills;
     }
 
+    public bool IsThirdYearStudent()
+    {
+        return Course == 3;
+    }
+
+    public bool IsBornInSummer()
+    {
+        return DateOfBirth.Month >= 6 && DateOfBirth.Month <= 8;
+    }
+
     public void AddSkill(string skill)
     {
         Skills.Add(skill);
@@ -29,6 +39,7 @@ public interface IPerformAction
 {
     void PerformAction();
 }
+
 public class Astronaut : IPerformAction
 {
     public void PerformAction()

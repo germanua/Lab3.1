@@ -7,6 +7,7 @@ public class ReadWrite
 {
     private string filename = "Students.txt";
     private InputOutput io;
+
     public ReadWrite(InputOutput io)
     {
         this.io = io;
@@ -17,16 +18,13 @@ public class ReadWrite
         List<T> data = new List<T>();
         if (File.Exists(filename))
         {
-            using (StreamReader sr = new StreamReader(filename))
+            string jsonData = File.ReadAllText(filename);
+            if (!string.IsNullOrEmpty(jsonData))
             {
-                string line;
-                while ((line = sr.ReadLine()) != null)
-                {
-                    T item = JsonConvert.DeserializeObject<T>(line);
-                    data.Add(item);
-                }
+                data = JsonConvert.DeserializeObject<List<T>>(jsonData);
             }
         }
+
         return data;
     }
 
@@ -35,7 +33,7 @@ public class ReadWrite
         string jsonData = JsonConvert.SerializeObject(data, Formatting.Indented);
         File.WriteAllText(filename, jsonData);
     }
-
 }
+
 
 

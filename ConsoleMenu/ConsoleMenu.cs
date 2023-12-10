@@ -25,7 +25,8 @@ public class ConsoleMenu
             Console.WriteLine("3. Perform Actions");
             Console.WriteLine("4. Change Student Information");
             Console.WriteLine("5. Delete Student");
-            Console.WriteLine("6. Save Data and Exit");
+            Console.WriteLine("6. Sort Students");
+            Console.WriteLine("7. Save Data and Exit");
             Console.Write("Choose an option: ");
 
             int choice = int.Parse(Console.ReadLine());
@@ -48,6 +49,9 @@ public class ConsoleMenu
                     DeleteStudent();
                     break;
                 case 6:
+                    SortStudents();
+                    break;
+                case 7:
                     SaveDataAndExit();
                     return;
                 default:
@@ -146,58 +150,58 @@ private bool TryParseDateOfBirth(out DateTime dateOfBirth)
 }
 
 
-    private void DisplayStudents()
-    {
-        const int pageSize = 10;
-        int totalPages = (int)Math.Ceiling((double)students.Count / pageSize);
+private void DisplayStudents()
+{
+    const int pageSize = 10;
+    int totalPages = (int)Math.Ceiling((double)students.Count / pageSize);
 
-        if (students.Count == 0)
+    if (students.Count == 0)
+    {
+        Console.WriteLine("No students to display.");
+        return;
+    }
+
+    int currentPage = 1;
+
+    while (true)
+    {
+        Console.WriteLine($"Page {currentPage} of {totalPages}:");
+
+        int startIndex = (currentPage - 1) * pageSize;
+        int endIndex = Math.Min(currentPage * pageSize, students.Count);
+
+        for (int i = startIndex; i < endIndex; i++)
         {
-            Console.WriteLine("No students to display.");
-            return;
+            Console.WriteLine($"{i + 1}. {students[i].FirstName} {students[i].LastName}");
         }
 
-        int currentPage = 1;
+        Console.WriteLine("Options:");
+        Console.WriteLine("N - Next Page, P - Previous Page, E - Exit");
+        Console.Write("Enter an option: ");
 
-        while (true)
+        string option = Console.ReadLine().ToUpper();
+        switch (option)
         {
-            Console.WriteLine($"Page {currentPage} of {totalPages}:");
-
-            int startIndex = (currentPage - 1) * pageSize;
-            int endIndex = Math.Min(currentPage * pageSize, students.Count);
-
-            for (int i = startIndex; i < endIndex; i++)
-            {
-                Console.WriteLine($"{i + 1}. {students[i].FirstName} {students[i].LastName}");
-            }
-
-            Console.WriteLine("Options:");
-            Console.WriteLine("N - Next Page, P - Previous Page, E - Exit");
-            Console.Write("Enter an option: ");
-
-            string option = Console.ReadLine().ToUpper();
-            switch (option)
-            {
-                case "N":
-                    if (currentPage < totalPages)
-                    {
-                        currentPage++;
-                    }
-                    break;
-                case "P":
-                    if (currentPage > 1)
-                    {
-                        currentPage--;
-                    }
-                    break;
-                case "E":
-                    return;
-                default:
-                    Console.WriteLine("Invalid option.");
-                    break;
-            }
+            case "N":
+                if (currentPage < totalPages)
+                {
+                    currentPage++;
+                }
+                break;
+            case "P":
+                if (currentPage > 1)
+                {
+                    currentPage--;
+                }
+                break;
+            case "E":
+                return;
+            default:
+                Console.WriteLine("Invalid option.");
+                break;
         }
     }
+}
 
 
     private void PerformActions()
@@ -294,7 +298,6 @@ private bool TryParseDateOfBirth(out DateTime dateOfBirth)
                     List<string> newSkills = new List<string>(newSkillsInput.Split(','));
                     student.Skills = newSkills;
                     break;
-                // Add cases for other attributes...
                 default:
                     Console.WriteLine("Invalid choice. No changes were made.");
                     break;
@@ -306,6 +309,33 @@ private bool TryParseDateOfBirth(out DateTime dateOfBirth)
             Console.WriteLine("Student not found.");
         }
     }
+
+    private void SortStudents()
+    {
+        // Filter students who are in the 3rd year and born in summer
+        var sortedStudents = students
+            .Where(s => s.IsThirdYearStudent() && s.IsBornInSummer())
+            .OrderBy(s => s.LastName)
+            .ThenBy(s => s.FirstName)
+            .ToList();
+
+        if (sortedStudents.Count == 0)
+        {
+            Console.WriteLine("There are no students to sort.");
+            return;
+        }
+
+        Console.WriteLine($"Number of 3rd year students born in summer: {sortedStudents.Count}");
+
+        // Display the sorted students
+        Console.WriteLine("Sorted Students:");
+        foreach (var student in sortedStudents)
+        {
+            Console.WriteLine($"{student.FirstName} {student.LastName} - {student.DateOfBirth:dd-MM-yyyy}");
+        }
+    }
+
+
 
     private void DeleteStudent()
     {
