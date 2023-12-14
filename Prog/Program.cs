@@ -9,7 +9,7 @@ class Program
         InputOutput io = new InputOutput("Students.txt");
         ReadWrite readWrite = new ReadWrite(io);
 
-        // Read existing students from the file (if any)
+   
         students = io.ReadStudents();
 
         if (students == null)
@@ -17,7 +17,7 @@ class Program
             students = new List<Student>();
         }
 
-        // Create instances of your entities
+        // Instances of  entities
         Astronaut astronaut = new Astronaut();
         Teacher teacher = new Teacher();
 
